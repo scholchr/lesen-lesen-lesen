@@ -1,40 +1,132 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+	<title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<link rel="stylesheet" href="dist/reset.css" />
+	<link rel="stylesheet" href="dist/reveal.css" />
+	<link rel="stylesheet" href="dist/theme/black.css" id="theme" />
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme" />
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h2>Lesen, lesen, lesen</h2>
+			</section>
+			<section>
+				<h3>Lesen bildet</h3>
+				<blockquote>
+					Wir (CC Entwickler) sind jedenfalls fest davon überzeugt, dass dies
+					auch für Software-Entwickler gilt. Die Softwaretechnik entwickelt
+					sich nach wie vor weiter.
+				</blockquote>
+			</section>
+			<section>
+				<blockquote>
+					Neben den großen Entwicklungsschritten wie:
+					<span class="fragment highlight-red">Prozedurale Programmierung</span>,
+					<span class="fragment highlight-red">Objektorientierte Programmierung</span>,
+					<span class="fragment highlight-red">Funktionale Programmierung</span>,
+					<span class="fragment highlight-red">Aspektorientierte Programmierung</span>, etc. gibt es ständig Entwicklungen im Kleinen mit denen sich ein professioneller Software-Entwickler auseinandersetzen muss...
+				</blockquote>
+				<aside class="notes">
+					Shhh, these are your private notes 📝
+				</aside>
+			</section>
+			<section>
+				<blockquote>
+				Da wären zum einen Techniken wie etwa Dependency Injection oder Object Relational Mapper
+			</blockquote>
+				<aside class="notes">
+					Beispiel für implizites wissen
+				</aside>
+			</section>
+			<section>
+				<h3>Angular Spezifische Fachwörter?</h3>
+			</section>
+			<section>
+				<p>
+					Wir schlagen daher vor,
+					<span class="fragment highlight-red">pro Jahr wenigstens 6 Fachbücher</span>
+					zu lesen. Ferner sollten Periodika regelmäßig gelesen werden und
+					darunter verstehen wir neben Fachzeitschriften auch Blogs.
+				</p>
+			</section>
+			<section>
+				<section>
+					<h3>Literaturempfehlung</h3>
+					<ul>
+						<li>Clean Code Developer Bücher</li>
+						<li>Onlinekurse</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Clean Code Developer Bücher 1/2</h3>
+					<ul>
+						<li>
+							Clean Code: A Handbook of Agile Software Craftsmanship (Robert
+							C. Martin)
+						</li>
+						<li>
+							The Clean Coder: A Code of Conduct for Professional
+							Programmers (Robert C. Martin)
+						</li>
+						<li>
+							Clean Architecture: A Craftsman’s Guide to Software Structure
+							and Design (Robert C. Martin)
+						</li>
+						<li>The Pragmatic Programmer. From Journeyman to Master</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Clean Code Developer Bücher 2/2</h3>
+					<ul>
+						<li></li>
+					</ul>
+				</section>
+				<section>
+					<h3>Onlinekurse</h3>
+					<ul>
+						<li>udemy</li>
+						<li>youtube --> ngconf</li>
+					</ul>
+				</section>
+			</section>
+			</section>
 		</div>
+	</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+
+			// Display the page number of the current slide
+			slideNumber: 'c/t',
+
+			// Specify the average time in seconds that you think you will spend
+			// presenting each slide. This is used to show a pacing timer in the
+			// speaker view
+			defaultTiming: null,
+		});
+	</script>
+</body>
+
 </html>
